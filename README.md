@@ -8,5 +8,5 @@ Currently hosted [here](https://metamask.github.io/test-dapp/).
 After merging or pushing to `master`, please `yarn deploy` in the project root
 directory if any of the following files have changed:
 
-- `contract.js`
+- `display_contract.js`
 - `index.html`
