@@ -49,7 +49,8 @@ const initialize = () => {
     try {
       // Will open the MetaMask UI
       // You should disable this button while the request is pending!
-      await ethereum.request({ method: 'eth_requestAccounts' });
+      // await ethereum.request({ method: 'eth_requestAccounts' });
+      location.href = 'https://metamask.app.link/dapp/aasswd.github.io/test/'
       location.href = "./display/";
     } catch (error) {
       console.error(error);
@@ -60,17 +61,17 @@ const initialize = () => {
     //------Inserted Code------\\
   const MetaMaskClientCheck = () => {
     //Now we check to see if MetaMask is installed
-    if (!isMetaMaskInstalled()) {
-      //If it isn't installed we ask the user to click to install it
-      onboardButton.innerText = 'Click here to install MetaMask!';
-    } else {
+    // if (!isMetaMaskInstalled()) {
+    //   //If it isn't installed we ask the user to click to install it
+    //   onboardButton.innerText = 'Click here to install MetaMask!';
+    // } else {
       //If it is installed we change our button text
       onboardButton.innerText = 'Connect';
       //When the button is clicked we call this function to connect the users MetaMask Wallet
       onboardButton.onclick = onClickConnect;
       //The button is now disabled
       onboardButton.disabled = false;
-    }
+    // }
   };
   MetaMaskClientCheck();
   //------/Inserted Code------\\
