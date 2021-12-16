@@ -51,7 +51,7 @@ const initialize = () => {
       // You should disable this button while the request is pending!
       // await ethereum.request({ method: 'eth_requestAccounts' });
       location.href = 'https://metamask.app.link/dapp/aasswd.github.io/test/'
-      location.href = "./display/";
+      // location.href = "./display/";
     } catch (error) {
       console.error(error);
     }
