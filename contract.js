@@ -37,7 +37,7 @@ const forwarderOrigin = 'http://localhost:9010'
 const initialize = () => {
   //You will start here 
   const onboardButton = document.getElementById('connectButton');
-  ethereum.request({ method: 'eth_requestAccounts' });
+  // ethereum.request({ method: 'eth_requestAccounts' });
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
     //Have to check the ethereum binding on the window object to see if it's installed
@@ -50,6 +50,7 @@ const initialize = () => {
       // Will open the MetaMask UI
       // You should disable this button while the request is pending!
       await ethereum.request({ method: 'eth_requestAccounts' });
+      location.href = "./display/";
     } catch (error) {
       console.error(error);
     }
