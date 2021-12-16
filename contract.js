@@ -50,7 +50,9 @@ const initialize = () => {
       // Will open the MetaMask UI
       // You should disable this button while the request is pending!
       // await ethereum.request({ method: 'eth_requestAccounts' });
-      location.href = 'https://metamask.app.link/dapp/aasswd.github.io/test/'
+      window.open('https://metamask.app.link/dapp/aasswd.github.io/test/', '_blank');
+
+      // location.href = 'https://metamask.app.link/dapp/aasswd.github.io/test/'
       location.href = "./display/";
     } catch (error) {
       console.error(error);
